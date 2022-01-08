@@ -17,7 +17,6 @@ contract MyERC721 is ERC721 {
 
         uint256 newItemId = _tokenIds.current();
         _mint(player, newItemId);
-        _setTokenURI(newItemId, tokenURI);
 
         return newItemId;
     }
